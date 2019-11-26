@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Exercicio 3 jquery</title>
+</head>
+<body>
+    <div class="casa">Casa</div>
+    <div id="carro">Carro</div>
+
+    <div class="text-1">
+        <h1>Aula jquery Reprograma</h1>
+    </div>
+
+    <div id="text-2">
+        <h1>Aula jquery Reprograma</h1>
+    </div>
+
+    <script>
+         $(document).ready(function(){
+            $('.casa').css('border', '1px solid blue', )
+            $('.text-1').css({ 'color': '#f66', 'font-size':'40px', 'background': 'black'})
+
+        
+        });
+            var bordaCarro = document.getElementById('carro')
+            bordaCarro.style.border = '1px solid red'
+            bordaCarro.style.marginTop = ' 20px'
+
+            var text = document.getElementById('text-2')
+            text.style.color = '#f66'
+            text.style.fontSize = '40px'
+            text.style.background = "black";
+
+    </script>
+    
+</body>
+</html>

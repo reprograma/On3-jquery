@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Exercicio 4 Jquery</title>
+</head>
+<body>
+    <select name='exemplo' id='exemplo'>
+        <option value='4' class='teste' dado='a'>1</option>
+        <option value='2' class='teste' dado='b'>2</option>
+        <option value='3' class='teste' dado='c'>3</option>
+        <option value='1' class='teste' dado='d'>4</option>
+    </select>
+
+    <div class="divdemonstracao">Produto</div>
+
+    Texto vai aparecer dentro do Input:<br>
+    <input type="text" id="inputdemonstracao">
+
+    <script>
+
+    $(document).ready(function(){
+        $('#exemplo').change(function() {
+        var valor = this.value;
+        var dado = $(this).find(':selected').attr('dado');
+         console.log(valor, dado);
+        });
+
+        $(function(){
+        var valorDaDiv = $(".divdemonstracao").text();    
+        $("#inputdemonstracao").val(valorDaDiv);
+        });
+   
+    });
+      
+    </script>
+</body>
+</html>
