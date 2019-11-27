@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Efeito Parallax</title>
+</head>
+<body>
+   <div id="primeiradiv" class="bgParallax" data-speed="15">
+      <section>
+         <h1>I love Mountains</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi fugit quisquam, reiciendis ex dolores recusandae aut ullam, consectetur, rerum rem ipsum est vel id assumenda deleniti quas laborum eveniet! </p>
+      </section>
+   </div>
+   <div id="segundadiv" class="bgParallax" data-speed="15">
+      <section>
+         <h1>I love Mountains</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi fugit quisquam, reiciendis ex dolores recusandae aut ullam, consectetur, rerum rem ipsum est vel id assumenda deleniti quas laborum eveniet! </p>
+      </section>
+   </div>
+   <div id="terceiradiv" class="bgParallax" data-speed="10">
+      <section>
+         <h1>I love Mountains</h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ipsam obcaecati, quos recusandae praesentium minima natus eos velit blanditiis ullam voluptatem! Nisi, dignissimos consectetur aperiam iste obcaecati asperiores blanditiis non. </p>
+      </section>
+   </div>    
+   <script>
+   $('div.bgParallax').each(function(){
+    var $obj = $(this);
+
+      $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+        var bgpos = '50% '+ yPos + 'px';
+
+        $obj.css('background-position', bgpos );
+      }); 
+   });
+   </script>    
+</body>
+</html>
