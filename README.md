@@ -3,20 +3,20 @@ Turma Online 3 | Front-end | 2019 | Semana 6 | Jquery
 
 ![Logo-jquery](https://github.com/reprograma/On3-jquery/blob/master/jquery-logo-white.png)
 
-#Introdução ao jQuery
+# Introdução ao jQuery
 
 O jQuery é uma biblioteca ou framework JavaScript rápida e rica em recursos torna a manipulação de html,eventos, animações muito mais simples.
 Leia mais sobre o jquery na documentação https://api.jquery.com/
 
-#O que é uma Biblioteca de Javascript?
+# O que é uma Biblioteca de Javascript?
 
 Uma biblioteca é um arquivo de JavaScript que contém um monte de funções, e essas funções realizam alguma tarefa útil para sua página web.
 
-#Qual a vantagem de usar o jQuery?
+# Qual a vantagem de usar o jQuery?
 
 Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem muitas coisas prontas é muito simples de usar possibilitando assim que você escreva muito menos código e faça muito mais coisas o lema é write less do more
 
-#O que é DOM?
+# O que é DOM?
 
 Document Object Model ou seja Modelo de objeto de documento é uma interface de programação para documentos HTML,XML,SVG e etc.Ele fornece uma representação estruturada do documento.
 Pense no Dom como uma árvore onde as tags htmls são os galhos e define os métodos para que possamos alterar estilo, conteúdo e etc.
