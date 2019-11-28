@@ -14,7 +14,15 @@ Uma biblioteca é um arquivo de JavaScript que contém um monte de funções, e 
 
 # Qual a vantagem de usar o jQuery?
 
-Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem muitas coisas prontas é muito simples de usar possibilitando assim que você escreva muito menos código e faça muito mais coisas o lema é # write less do more
+Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem muitas coisas prontas, é muito simples de usar possibilitando assim que você escreva muito menos código e faça muito mais coisas o lema é # write less do more
+
+* Menos código
+* Incorpora e cria plugins
+* Seleção e manipulação de elementos html
+* Manipulação css
+* Efeitos e animação
+* Ajax 
+* Eventos
 
 # O que é DOM?
 
