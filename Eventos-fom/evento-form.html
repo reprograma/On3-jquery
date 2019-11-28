@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Exercicios de evento em formulario</title>
   <!-- Eventos de formulario com jquery -->
 </head>
+
 <body>
-  
+    <!-- submit -->
+    <!-- focus -->
+    <!-- blur -->
+
   <form action="">
     First name: <input type="text" name="FirstName" value=""><br>
     Last name: <input type="text" name="LastName" value=""><br>
     <input type="submit" value="Submit">
   </form>
+   <input id="input"> Clique aqui para ver o evento de focus</input>
   <script>
     $(document).ready(function () {
       $("form").submit(function () {
         alert("Formulario enviado com sucesso");
       });
+
+      $("#input").focus(function(){
+        alert("O input foi focado")
+      });
+
+      $("#input").blur(function(){
+        alert("Elemento perdeu o foco")
+      });
+
     });
   </script>
 
+  <style>
+    #input{
+      margin-top: 40px;
+    }
+  </style>
 </body>
+
 </html>

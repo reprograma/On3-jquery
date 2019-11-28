@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,34 +11,56 @@
 <!-- Metodos para manipular e capturar atributos do html -->
 
 <body>
-    <select name='exemplo' id='exemplo'>
-        <option value='4' class='teste' dado='a'>1</option>
-        <option value='2' class='teste' dado='b'>2</option>
-        <option value='3' class='teste' dado='c'>3</option>
-        <option value='1' class='teste' dado='d'>4</option>
-    </select>
+    <h3>Ver Dados do Aluno</h3>
+    <form>
+            Nome: <input type="text" name="nome" id="txtnome" />
+            Nota1: <input type="text" name="n1" id="txtn1" />
+            Nota2: <input type="text" name="n2" id="txtn2" />
+            <input type="button" value="Enviar Dados" id="btn" />
+    </form>
+    <div id="resposta"></div>
 
-    <div class="divdemonstracao">Produto</div>
+    <style>
+        form{
+            display: flex;
+            flex-direction: column;
+            width: 200px;
+        }
+        .aprovado {
+            background-color: #060;
+            color: #FFFFFF;
+            width: 200px;
+        }
 
-    Texto vai aparecer dentro do Input:<br>
-    <input type="text" id="inputdemonstracao">
-
+        .reprovado {
+            background-color: #f22;
+            color: #E2E2E2;
+            width: 200px;
+        }
+    </style>
     <script>
+        $(function () {
 
-    $(document).ready(function(){
-        $('#exemplo').change(function() {
-        var valor = this.value;
-        var dado = $(this).find(':selected').attr('dado');
-         console.log(valor, dado);
-        });
+            $("#btn").click(function () {
 
-        $(function(){
-        var valorDaDiv = $(".divdemonstracao").text();    
-        $("#inputdemonstracao").val(valorDaDiv);
+                $("#resposta").removeClass();
+
+                var nome = $("#txtnome").val();
+                var n1 = parseFloat($("#txtn1").val());
+                var n2 = parseFloat($("#txtn2").val());
+
+                var media = (n1 + n2) / 2;
+                $("#resposta").html(nome + ", " + media);
+
+                if (media >= 7) {
+                    $("#resposta").addClass("aprovado");
+                } else {
+                    $("#resposta").addClass("reprovado");
+                }
+            });
+
         });
-   
-    });
-      
     </script>
 </body>
+
 </html>
