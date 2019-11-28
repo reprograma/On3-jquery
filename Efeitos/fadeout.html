@@ -1,26 +1,38 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Exercicio fadeOut</title>
 </head>
 <body>
+  <p>Demonstração fadeOut().</p>
 
-<p>Demonstrate fadeOut() with different parameters.</p>
+  <button>Click para ver o efeito de fadeOut acontecer</button>
 
-<button>Click to fade out boxes</button><br><br>
+  <div class="caixas">
+    <div id="div1" style="width:80px;height:80px;background-color:red;"></div>
+    <div id="div2" style="width:80px;height:80px;background-color:green;"></div>
+    <div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+  </div>
 
-<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
-<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
-<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+  <style>
+    .caixas {
+      display: flex;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  </style>
 
-<script>
-    $(document).ready(function(){
-      $("button").click(function(){
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
         $("#div1").fadeOut();
         $("#div2").fadeOut("slow");
         $("#div3").fadeOut(3000);
       });
     });
-</script>
+  </script>
 </body>
+
 </html>

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-<script>
-$(document).ready(function(){
-  $("#p1").mouseleave(function(){
-    alert("voce saiu do p1!");
-  });
-});
-</script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <title>Exercicio sobre evento de mouseleave</title>
 </head>
 <body>
 
-<p id="p1">Enter this paragraph.</p>
+  <script>
+    $(document).ready(function () {
+      $("#p1").mouseleave(function () {
+        alert("Saiu da área p1!");
+      });
+    });
+  </script>
+  <p id="p1">Enter this paragraph.</p>
 
 </body>
 </html>

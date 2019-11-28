@@ -1,25 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <title>Exercicio Hide e Show Jquery</title>
-    </head>
-<body>
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Exercicio Hide e Show Jquery</title>
+</head>
+
+<body>
     <button id="hide">Esconder</button>
     <button id="show">Mostrar</button>
-    <p class="dois">Sou uma div </p>
+
+    <div class="text">
+        <p class="dois">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero corporis earum voluptates, aspernatur harum doloremque numquam facilis ipsum maiores nam dignissimos quibusdam temporibus beatae libero minima animi possimus sit distinctio!</p>
+    </div>
+    <style>
+        .text{
+            background-color: rgb(60, 11, 105);
+            color: white;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
 
     <script>
         $(document).ready(function () {
             $("#hide").click(function () {
-                $("p").hide();
+                $(".text").hide();
             });
             $("#show").click(function () {
-                $("p").show();
+                $(".text").show();
             });
         });
     </script>
