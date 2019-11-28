@@ -2,6 +2,7 @@
 Turma Online 3 | Front-end | 2019 | Semana 6 | Jquery
 
 Introdução ao jQuery
+
 O jQuery é uma biblioteca ou framework JavaScript rápida e rica em recursos tornando a manipulação de html de eventos, animações muito mais simples.
 Leia mais sobre o jquery na documentação https://api.jquery.com/
 
