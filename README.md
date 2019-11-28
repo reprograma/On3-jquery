@@ -27,6 +27,7 @@ Adicionar o script abaixo no header do documento index.html
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+
 2. Evento de inicialização do Dom
 
 O código abaixo deve ser adicionado logo no ínicio do código jQuery. Esse comando verifica se Dom foi carregado.
