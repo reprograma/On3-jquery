@@ -3,7 +3,7 @@ Turma Online 3 | Front-end | 2019 | Semana 6 | Jquery
 
 Introdução ao jQuery
 
-O jQuery é uma biblioteca ou framework JavaScript rápida e rica em recursos tornando a manipulação de html de eventos, animações muito mais simples.
+O jQuery é uma biblioteca ou framework JavaScript rápida e rica em recursos torna a manipulação de html,eventos, animações muito mais simples.
 Leia mais sobre o jquery na documentação https://api.jquery.com/
 
 O que é uma Biblioteca de Javascript?
@@ -12,7 +12,7 @@ Uma biblioteca é um arquivo de JavaScript que contém um monte de funções, e 
 
 Qual a vantagem de usar o jQuery?
 
-Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem muitas coisas prontas é muito simples de usar possibilitando assim que você escreva muito menos código o lema é write less do more
+Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem muitas coisas prontas é muito simples de usar possibilitando assim que você escreva muito menos código e faça muito mais coisas o lema é write less do more
 
 O que é DOM?
 
