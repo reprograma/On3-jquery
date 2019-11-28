@@ -1,6 +1,8 @@
 # On3-jquery
 Turma Online 3 | Front-end | 2019 | Semana 6 | Jquery
 
+![Logo-jquery](https://github.com/reprograma/On3-jquery/blob/master/jquery-logo-white.png)
+
 Introdução ao jQuery
 
 O jQuery é uma biblioteca ou framework JavaScript rápida e rica em recursos torna a manipulação de html,eventos, animações muito mais simples.
