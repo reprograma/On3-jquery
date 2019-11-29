@@ -37,3 +37,15 @@ Adicionar o script abaixo no header do documento index.html
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+# O que vamos aprender na aula
+* O que é o Jquery e quando usá-lo
+* Como instalar no projeto via CDN
+* Seletores do Jquery X seletores do objeto document
+* Métodos para manipular e capturar atributos do HTML
+* Eventos do browser
+* Eventos do teclado e do mouse
+* Eventos em formulários
+* Eventos de carregamento do DOM
+* Efeitos (Ex: Toggle, Hide, FadeIn e FadeOut)
+
+
