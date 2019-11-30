@@ -25,8 +25,8 @@ Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem m
 
 # O que é DOM?
 
-Document Object Model ou seja Modelo de objeto de documento é uma interface de programação para documentos HTML,XML,SVG e etc.Ele fornece uma representação estruturada do documento.
-Pense no Dom como uma árvore onde as tags htmls são os galhos e define os métodos para que possamos alterar estilo, conteúdo e etc.
+Document Object Model ou seja Modelo de objeto de documento é uma interface de programação para documentos HTML,XML,SVG e etc. Ele fornece uma representação estruturada do documento.
+Pense no Dom como uma árvore onde as tags htmls são os galhos e define os métodos para que possamos acessar nossas tags e alterar estilo, conteúdo e etc.
 
 # Instalação
 
