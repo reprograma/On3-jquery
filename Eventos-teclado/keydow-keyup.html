@@ -15,8 +15,13 @@
     Escreva seu nome: <input type="text">
 
     <script>
+        $("input").keydown(function () {
+            $("input").css("background-color", "yellow");
+        });
         $(document).ready(function () {
-            /*Exercicio vai aqui */   
+            $("input").keyup(function () {
+                $("input").css("background-color", "red")
+            })
         });
     </script>
 </body>

@@ -5,13 +5,17 @@
 </head>
 <body>
 
-<p>Isso e um paragrafo</p>
+
 
 <button>Toggle entre hide() e show()</button>
 
+<p>Isso e um paragrafo</p>
+
 <script>
     $(document).ready(function(){
-      /*Exercicio vai aqui */   
+      $("button").click(function(){
+        $("p").toggle()
+      })
 
     });
 </script>

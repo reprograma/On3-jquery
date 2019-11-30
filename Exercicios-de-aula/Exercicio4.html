@@ -21,11 +21,12 @@
     <div id="resposta"></div>
 
     <style>
-        form{
+        form {
             display: flex;
             flex-direction: column;
             width: 200px;
         }
+
         .aprovado {
             background-color: #060;
             color: #FFFFFF;
@@ -38,8 +39,29 @@
             width: 200px;
         }
     </style>
-    <script>
-        /*Exercicio vai aqui */   
+     <script>
+            $(function () {
+    
+                $("#btn").click(function () {
+    
+                    $("#resposta").removeClass();
+    
+                    var nome = $("#txtnome").val();
+                    var n1 = parseFloat($("#txtn1").val());
+                    var n2 = parseFloat($("#txtn2").val());
+    
+                    var media = (n1 + n2) / 2;
+                    $("#resposta").html(nome + ", " + media);
+    
+                    if (media >= 7) {
+                        $("#resposta").addClass("aprovado");
+                    } else {
+                        $("#resposta").addClass("reprovado");
+                    }
+                });
+    
+            });
+
     </script>
 </body>
 

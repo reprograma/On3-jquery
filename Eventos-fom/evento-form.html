@@ -20,7 +20,20 @@
    <input id="input"> Clique aqui para ver o evento de focus</input>
   <script>
     $(document).ready(function () {
-      /*Exercicio vai aqui */   
+    
+      $(document).ready(function () {
+      $("form").submit(function () {
+        alert("Formulario enviado com sucesso");
+      });
+
+      $("#input").focus(function(){
+        alert("O input foi focado")
+      });
+
+      $("#input").blur(function(){
+        alert("Elemento perdeu o foco")
+        
+      });
     });
   </script>
 

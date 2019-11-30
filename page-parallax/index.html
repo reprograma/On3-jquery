@@ -28,16 +28,18 @@
       </section>
    </div>    
    <script>
-   $('div.bgParallax').each(function(){
-    var $obj = $(this);
+      $("div.bgParallax").each(function(){
+         var $obj = $(this)
 
-      $(window).scroll(function() {
-        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
-        var bgpos = '50% '+ yPos + 'px';
+         $(window).scroll(function(){
+            var yPos = -($(window).scrollTop() / $obj.data('speed'))
+            var bgPos = "50%" + yPos + "px"
 
-        $obj.css('background-position', bgpos );
-      }); 
-   });
+            $obj.css("background-position", bgPos)
+
+         })
+      })
+  
    </script>    
 </body>
 </html>
