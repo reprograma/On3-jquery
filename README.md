@@ -21,7 +21,6 @@ Jquery é uma aplicação livre, ocupa pouco espaço e é muito ampla pois tem m
 * Seleção e manipulação de elementos html
 * Manipulação css
 * Efeitos e animação
-* Ajax 
 * Eventos
 
 # O que é DOM?
