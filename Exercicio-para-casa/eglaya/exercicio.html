@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./css.css"/>
+    <title>Exercício de Parallax</title>
+</head>
+
+<body>
+   <div id="primeiradiv" class="bgParallax" data-speed="15">
+      <section>
+         <h1>Título 1</h1>
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <button id="btn1">Clique aqui</button>
+      </section>
+   </div>
+
+   <div id="segundadiv" class="bgParallax" data-speed="15">
+      <section>
+         <h1>Título 2</h1>
+         <p class=texto2>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+         <button id="btn2">Clique aqui</button>
+      </section>
+   </div>
+
+   <div id="terceiradiv" class="bgParallax" data-speed="10">
+      <section>
+         <h1>Título 3</h1>
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+         <button id="btn3">Clique aqui</button>
+      </section>
+   </div>  
+
+   <script>
+
+    $(document).ready(function () {
+
+        $('#btn1').click(function(){
+             $('#primeiradiv').css({ 'color': 'black', 'background': 'yellow' })
+            })
+
+        $("#btn3").click(function(){
+             $('#terceiradiv').css('background','purple')
+            })  
+
+        $("#btn2").click(function(){
+             $(".texto2").toggle()
+      }) 
+
+    });
+
+    $('div.bgParallax').each(function(){
+    var $obj = $(this);
+
+      $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+        var bgpos = '50% '+ yPos + 'px';
+
+        $obj.css('background-position', bgpos );
+      }); 
+   });
+   </script>   
+
+</body>
+</html>
