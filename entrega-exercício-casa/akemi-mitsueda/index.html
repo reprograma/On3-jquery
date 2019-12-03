@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tarefa de Casa - JQuery</title>
+  <link href="https://fonts.googleapis.com/css?family=Esteban&display=swap" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section id="firstDiv" class="bgParallax" data-speed="15">
+    <div class="poem">
+      <h1>“Hope” is the thing with feathers</h1>
+      <p>
+        “Hope” is the thing with feathers -<br>
+        That perches in the soul -<br>
+        And sings the tune without the words -<br>
+        And never stops - at all -<br>
+      </p>
+      <p>
+        And sweetest - in the Gale - is heard -<br>
+        And sore must be the storm -<br>
+        That could abash the little Bird<br>
+        That kept so many warm -<br>
+      </p>
+      <p>
+        I’ve heard it in the chillest land -<br>
+        And on the strangest Sea -<br>
+        Yet - never - in Extremity,<br>
+        It asked a crumb - of me.<br>
+      </p>
+      <br>
+      <p><em>Emily Dickinson</em></p>
+    </div>
+  </section>
+
+  <section id="secondDiv" class="bgParallax" data-speed="10">
+    <div class="poem">
+      <h1>Leaves</h1>
+      <p>
+        Years do odd things to identity.<br>
+        What does it mean to say<br>
+        I am that child in the photograph<br>
+        at Kishamish in 1935?<br>
+        Might as well say I am the shadow<br>
+        of a leaf of the acacia tree<br>
+        felled seventy years ago<br>
+        moving on the page the child reads.<br>
+        Might as well say I am the words she read<br>
+        or the words I wrote in other years,<br>
+        flicker of shade and sunlight<br>
+        as the wind moves through the leaves.<br>
+      </p>
+      <br>
+      <p><em>Ursula K. LeGuin</em></p>
+    </div>
+  </section>
+
+  <section id="thirdDiv" class="bgParallax" data-speed="10">
+    <div class="poem">
+      <h1>Watering the Stones</h1>
+      <p>
+        Every summer I gather a few stones from<br>
+        the beach and keep them in a glass bowl.<br>
+        Now and again I cover them with water,<br>
+        and they drink. There’s no question about<br>
+        this; I put tinfoil over the bowl, tightly,<br>
+        yet the water disappears. This doesn’t<br>
+        mean we ever have a conversation, or that<br>
+        they have the kind of feelings we do, yet<br>
+        it might mean something. Whatever the<br>
+        stones are, they don’t lie in the water<br>
+        and do nothing.<br>
+      </p>
+      <br>
+      <p>
+        Some of my friends refuse to believe it<br>
+        happens, even though they’ve seen it. But<br>
+        a few others—I’ve seen them walking down<br>
+        the beach holding a few stones, and they<br>
+        look at them rather more closely now.<br>
+        Once in a while, I swear, I’ve even heard<br>
+        one or two of them saying “Hello.”<br>
+        Which, I think, does no harm to anyone or<br>
+        anything, does it?<br>
+      </p>
+      <br>
+      <p><em>Mary Oliver</em></p>
+    </div>
+  </section>
+
+  <script>
+    $('section.bgParallax').each(function () {
+      var $obj = $(this);
+
+      $(window).scroll(function () {
+        var yPos = -($(window).scrollTop() / $obj.data('speed'));
+        var bgpos = '50% ' + yPos + 'px';
+        $obj.css('background-position', bgpos);
+      });
+    });
+
+    $(document).ready(function () {
+      $('h1').mouseenter(function () {
+        $('h1').css('filter', 'blur(3px');
+      });
+
+      $('p').mouseenter(function () {
+        $('p').css('filter', 'blur(3px');
+      });
+
+      $('h1').mouseleave(function () {
+        $('h1').css('filter', 'blur(0px');
+      });
+
+      $('p').mouseleave(function () {
+        $('p').css('filter', 'blur(0px');
+      });
+    })
+
+  </script>
+</body>
+
+</html>
