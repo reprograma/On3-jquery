@@ -1,0 +1,59 @@
+<!-- Crie uma page que tenha algum efeito jquery ex: Parallax e que tenha ao menos um evento que pode ser de mouse, 
+    teclado ou como quiserem -->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tema de Casa - jQuery - Semana 6</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <style>
+        body {
+            background-size: 95%;
+            background-image: url(./src/preso.jpg);
+            text-align: center;
+        }
+        button {
+            background-color: rgb(0, 0, 0);
+            color: rgb(103, 252, 252);
+            font: normal 50px Arial;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn1">Continuar Preso</button>
+    <button id="btn2">Libertar-se</button>
+    <button id="btn3">Evoluir</button>
+
+    <script type="text/javascript">
+        // Evento de click exibe as imagens
+        $(document).ready(function () {
+            $("#btn3").hide(); // efeito para ocultar botões
+            $("#btn1").click(function () {
+                $("body").css("background-image", 'url("./src/preso.jpg")');
+                $msgalert = 'Você está preso nesta página! Conclua o exercício para sair!';
+            });
+            $("#btn2").click(function () {
+                $("body").css("background-image", 'url("./src/liberto.jpg")');
+                $("#btn1").hide(); // efeito para ocultar botões
+                $("#btn2").hide(); // efeito para ocultar botões
+                $("#btn3").show(); // efeito para mostrar botões
+                $msgalert = 'Parabéns! Você está livre!';
+            });
+            $("#btn3").click(function () {
+                window.location.href = 'https://reprograma.com.br/'; // ir para
+            });
+            // Evento mouseleave mostra um alerta com a mensagem setada em cada botão
+            $(document).mouseleave(function () {
+                alert($msgalert);
+            });
+        });
+    </script>
+</body>
+
+</html>
