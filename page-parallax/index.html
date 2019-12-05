@@ -21,24 +21,23 @@
          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio sequi fugit quisquam, reiciendis ex dolores recusandae aut ullam, consectetur, rerum rem ipsum est vel id assumenda deleniti quas laborum eveniet! </p>
       </section>
    </div>
-   <div id="terceiradiv" class="bgParallax" data-speed="10">
+   <div id="terceiradiv" class="bgParallax" data-speed="15">
       <section>
          <h1>I love Mountains</h1>
          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque ipsam obcaecati, quos recusandae praesentium minima natus eos velit blanditiis ullam voluptatem! Nisi, dignissimos consectetur aperiam iste obcaecati asperiores blanditiis non. </p>
       </section>
    </div>    
    <script>
-      $("div.bgParallax").each(function(){
-         var $obj = $(this)
-
-         $(window).scroll(function(){
-            var yPos = -($(window).scrollTop() / $obj.data('speed'))
-            var bgPos = "50%" + yPos + "px"
-
-            $obj.css("background-position", bgPos)
-
-         })
-      })
+      $(document).ready(function () {
+            $('div.bgParallax').each(function () {
+                var obj = $(this);
+                $(window).scroll(function () {
+                    var yPos = $(window).scrollTop() / $obj.data('speed');
+                    var bgpos = '50% ' + yPos + 'px';
+                    obj.css('background-position', bgpos);
+                });
+            });
+        });
   
    </script>    
 </body>
