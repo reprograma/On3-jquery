@@ -1,0 +1,272 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+
+/* Início NAV */
+
+.navbar {
+    padding: 15px;
+    position: fixed;
+    z-index: 1;
+    width:100%;
+}
+ 
+.nav-item {
+    margin: 0 60px;
+}
+
+.nav-link {
+    color: white;
+}
+
+ul {
+    display:flex;  
+    justify-content: center;
+    list-style-type: none;
+    margin-right: 50px;
+}
+
+/* Fim NAV */
+
+/* Início CAROUSEL*/
+
+.carousel-img-1, .carousel-img-2, .carousel-img-3 {
+    height: 800px;
+    object-fit: cover;
+}
+
+.carousel-caption {
+    background-color: rgba(129, 139, 139, 0.7);    
+}
+
+.carousel-caption h5 {
+    font-size: 50px;
+}
+
+/* Fim CAROUSEL */
+
+
+
+/* Início NEWSLETTER */
+
+.newsletter {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: flex;
+   
+}
+
+.newsletter1 {
+   
+    width: 75%;
+    display: flex;
+    align-items: center;
+
+
+}
+
+.newsletter2 {  
+    display: flex;
+    align-items: center;
+    margin-left: 60px;
+}
+
+.newsletter-email {
+    margin-top: 40px;
+}
+
+
+/* Fim NEWSLETTER */
+
+/* Início ABOUT */
+
+.about {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color:#b2d5e9;
+}
+
+.about-img {
+    display: flex;
+  
+}
+
+.img-thumbnail {
+    height: 250px;
+    border-radius: 120px;  
+    object-fit: cover;
+}
+
+
+.about-p {
+   margin: auto 20px;
+   text-align: initial;
+}
+
+@media (max-width: 960px) {
+    .img-thumbnail {
+        margin-bottom: 40px;
+    }
+    .about-p {
+        text-align: center;
+     }
+}
+
+/* Fim ABOUT */
+
+/*Início ARTIGOS-CARDS */
+
+.artigos {
+    margin-top: 50px;
+}
+
+.row-artigos {
+    margin-top: 40px;
+}
+
+.card-body:hover {
+    background-color: #dcdcdc;
+}
+
+.card {
+    height: 400px;
+    margin: 0 auto;
+}
+
+.card-img-top{
+    max-height: 150px;
+    object-fit: cover;
+}
+
+.button-artigos {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+/*Fim ARTIGOS-CARDS */
+
+/* Início CONTATO */
+
+.contato {
+    background-color:#b2d5e9;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.formulario {
+    margin: 40px 30px;
+    
+}
+
+.form-control {
+    margin: 0 auto;
+}
+
+.button-contato {
+    margin-top: 40px;    
+}
+
+
+/* Fim CONTATO */
+
+/* Início Links */
+
+
+/* links trabalho */
+
+.links-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.links-trabalho {
+   padding-bottom: 40px;
+
+}
+
+
+.linkedin-img {
+    height: 70px;
+    object-fit: cover;
+}
+
+.cfp-img {
+    height: 50px;
+    object-fit: cover;
+}
+
+.zenklub-img {
+    height: 60px;
+    object-fit: cover;
+}
+
+/* Fim Links */
+
+/* Footer */
+.nav-footer {
+    padding: 30px 20px;
+    color: white;
+    display: block;
+}
+
+.footer-p1 {
+    text-align: center;
+    margin: 0;
+}
+
+.footer-p2 {
+    text-align: center;
+}
+
+
+
+
+
+/* versão MOBILE */
+
+@media (max-width: 960px) {
+
+    /* NAV MOBILE */
+
+    .navbar {
+        padding: 5px;
+    }
+
+    .nav-item {
+        display: none;
+    }
+
+    /* CAROUSEL MOBILE */
+    .carousel-img-1, .carousel-img-2, .carousel-img-3 {
+     height: 500px;
+    }
+
+    /* ARTIGOS MOBILE*/
+
+    .row-artigos {
+        margin-top: 10px;
+    }
+
+    .card {
+    margin-top: 40px;
+    }
+
+    /* NEWSLETTER MOBILE */
+
+    .newsletter2 { 
+        display: none;
+    }
+
+}
+
+
+
+/* JQUERY */
+.textoNewsletter, .textoContato {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    margin-top:25px;
+}
+
+
