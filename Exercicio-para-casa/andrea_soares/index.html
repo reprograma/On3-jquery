@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>E-armário</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/c068ef4323.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+
+<body>
+
+  <!-- Início Barra de navegação -->
+
+  <section>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background:rgb(202, 200, 194)" ;>
+      <div class="container">
+        <a class="logo-navbar navbar-brand" href="#sobre"> e-armário</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Alterna navegação">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="#sobre">Sobre <span class="sr-only">(Página atual)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#eventos">Eventos</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Explore
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#novidades">Novidades</a>
+                <a class="dropdown-item" href="#destaques">Destaques</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="row">
+          <div class="col col-md-3">
+            <form class="form-inline my-0">
+              <input class="form-control" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Fim Barra de navegação -->
+
+
+  <!-- Início Sobre -->
+
+  <section>
+    <div class="container" id="sobre">
+      <div class="row sobre">
+        <div class="col col-sm-12">
+          <img src="./imagem/photo00.jpg" class="img-fluid img-thumbnail rounded" alt="Roupas na loja">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col  col-sm-12 ">
+          <div class="shadow p-3 mb-5 bg-white rounded">
+            <h1 class="text-center">Sobre</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col  col-sm-12 ">
+          <p class="lead text-center">Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que
+            um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis! Nec orci ornare consequat. Praesent
+            lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar
+            sua vidis.
+
+            Si num tem leite então bota uma pinga aí cumpadi! Não sou faixa preta cumpadi, sou preto inteiris, inteiris.
+            Em pé sem cair, deitado sem dormir, sentado sem cochilar e fazendo pose. Manduma pindureta quium dia nois
+            paga.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fim Sobre -->
+
+
+  <!-- Início do CARD de Novidades -->
+
+  <section>
+    <div class="container" id="novidades">
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+          <div class="border-bottom border-dark mb-2">
+            <h1>Novidades</h1>
+          </div>
+        </div>
+      </div>
+
+      <!-- card 1-->
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-4">
+          <div class="card text-center" style="width: 15rem;">
+            <div id="conteudo_card1">
+              <img class=" img-fluid card-img-top" src="./imagem/image1 (1).jpeg" alt="Imagem do card">
+              <div id="altera" class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um
+                  alcoolatra anonimis. </p>
+                <button id="botao_detalhes" class="btn btn-primary botao">Detalhes</button>
+              </div>
+            </div>
+            <div id="detalhes1" class="detalhes">
+              <h3>Detalhes do card um</h3>
+              <p>Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um
+                alcoolatra anonimis.</p>
+              <button id="botao_comprar1" class="btn btn-primary ">Comprar</button>
+              <button id="botao_voltar1" class="btn btn-primary ">Voltar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 2-->
+        <div class=" col-12 col-sm-12 col-md-4">
+          <div class="card text-center" style="width: 15rem;">
+            <div id="conteudo_card2">
+              <img class="img-fluid card-img-top" src="./imagem/image1 (1).jpeg" alt="Imagem do card">
+              <div id="altera2" class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um
+                  alcoolatra anonimis.</p>
+                <button id="botao_detalhes2" class="btn btn-primary">Detalhes</button>
+              </div>
+            </div>
+            <div id="detalhes2" class="detalhes">
+              <h3>Detalhes do card dois</h3>
+              <p>Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um
+                alcoolatra anonimis.</p>
+              <button id="botao_comprar2" class="btn btn-primary ">Comprar</button>
+              <button id="botao_voltar2" class="btn btn-primary ">Voltar</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- card 3-->
+        <div class=" col-12 col-sm-12 col-md-4">
+          <div class="card text-center" style="width: 15rem;">
+            <div id="conteudo_card3">
+              <img class="img-fluid card-img-top" src="./imagem/image1 (1).jpeg" alt="Imagem do card">
+              <div id="altera3" class="card-body">
+                <h5 class="card-title">Título do card</h5>
+                <p class="card-text">Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um
+                  alcoolatra anonimis.</p>
+                <button id="botao_detalhes3" class="btn btn-primary">Detalhes</button>
+              </div>
+            </div>
+          
+          <div id="detalhes3" class="detalhes">
+            <h3>Detalhes do card três</h3>
+            <p>Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que um
+              alcoolatra anonimis.</p>
+            <button id="botao_comprar3" class="btn btn-primary ">Comprar</button>
+            <button id="botao_voltar3" class="btn btn-primary ">Voltar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fim do CARD de Novidades -->
+
+
+  <!-- Início Destaques-->
+
+  <section>
+    <div class="container" id="destaques">
+
+      <div class="row">
+        <div class="col-12 col-sm-12 col-md-12">
+          <div class="border-bottom border-dark mb-2">
+            <h1>Destaques</h1>
+          </div>
+        </div>
+      </div>
+
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <!-- primeiro slide-->
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="./imagem/imagem1.jpg" alt="Primeiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mussum Ipsum</h5>
+              <p class="text-white-100 bg-dark"> vidis litrfhdfhdhdo abertis.</p>
+            </div>
+          </div>
+
+          <!-- segundo slide-->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./imagem/imagem02.jpeg" alt="Segundo Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mussum Ipsum</h5>
+              <p class="text-white-100 bg-dark">Mussum Ipsum, cacilds vidis litro abertis.</p>
+            </div>
+          </div>
+
+          <!-- terceiro slide-->
+          <div class="carousel-item">
+            <img class="d-block w-100" src="./imagem/photo-1512436991641-6745cdb1723f.jpg" alt="Terceiro Slide">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Mussum Ipsum</h5>
+              <p class="text-white-50 bg-dark">Cacilds vidis litro abertis.</p>
+            </div>
+          </div>
+
+        </div>
+
+        <!--controle carousel-->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Anterior</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Próximo</span>
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- Fim Destaques-->
+
+
+  <!-- Início Eventos-->
+  <section>
+    <div class="container" id="eventos">
+      <div class="jumbotron">
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-12 ">
+            <h1 class="display-5">Eventos</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+            <img class="lead" src="./imagem/presente.jpeg" alt="imagem de presente">
+          </div>
+          <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8">
+            <p class="text-justify py-5">Evento do mês atual. Mussum Ipsum, cacilds vidis litro abertis. Mais vale um
+              bebadis conhecidiss, que
+              um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis! Nec orci ornare consequat. Praesent
+              lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar
+              sua vidis.
+            </p>
+          </div>
+        </div>
+
+
+        <!-- Botão para acionar Leia mais ou modal -->
+        <div class="row">
+          <div class="col-12 col-sm-12 col-md-12">
+            <button id="botao_leia_mais" type="button" class="btn btn-primary">Leia mais</button>
+            <button id="botao_fechar" type="button" class="btn btn-primary">Fechar</button>
+          </div>
+        </div>
+
+        <div class="saber_mais">
+          <p>Mussum Ipsum, cacilds vidis litro abertis. Mais vale um bebadis conhecidiss, que
+            um alcoolatra anonimis. Quem num gosta di mim que vai caçá sua turmis! Nec orci ornare consequat. Praesent
+            lacinia ultrices consectetur. Sed non ipsum felis. Tá deprimidis, eu conheço uma cachacis que pode alegrar
+            sua vidis.</p>
+        </div>
+      </div>
+
+      <!-- Modal 
+      <div class="modal fade" id="modalExemplo" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Nome do Evento </h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Aqui terá a descrição do evento lo</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+    </div>
+  </section>
+
+  <!-- Fim Evento-->
+
+
+
+
+  <!-- Início do footer-->
+
+  <section>
+
+    <footer class="page-footer pt-4">
+      <div class="container text-center">
+
+        <a href="https://instagram.com/e_armariocompleto?igshid=1bwzl7vt3o6fy" target="_blank"
+          class="footer__instagram">
+          <i class="fab fa-instagram fa-2x"></i>
+        </a>
+
+        <a href="https://instagram.com/e_armariocompleto?igshid=1bwzl7vt3o6fy" target="_blank"
+          class="footer__instagram">
+          <i class="fab fa-facebook fa-2x"></i>
+        </a>
+
+        <a href="https://instagram.com/e_armariocompleto?igshid=1bwzl7vt3o6fy" target="_blank"
+          class="footer__instagram">
+          <i class="fab fa-whatsapp fa-2x"></i>
+        </a>
+
+      </div>
+
+      <div class="footer-copyright text-center">© 2019 Copyright:
+        <a href="https://instagram.com/e_armariocompleto?igshid=1bwzl7vt3o6fy" target="_blank"> e-armario</a>
+      </div>
+
+    </footer>
+  </section>
+
+  <!-- Fim do footer-->
+
+  <script src="./script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
