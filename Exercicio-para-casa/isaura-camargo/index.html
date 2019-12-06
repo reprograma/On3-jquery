@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dezembro Verde - Diga Não ao Abandono de Animais!</title>
+</head>
+<body>
+      <button id="hide">Não Adotar 😿 </button>
+      <button id="show">Adotar 😻 </button>
+
+      <div class="text">
+            <p class="dois"> Durante sua vida você terá muitos amigos, trabalhos e até filhos. Mas, para seu cão só exixtirá você enquanto ele viver...</p>
+        </div>
+
+   <div id="primeiradiv" class="bgParallax" data-speed="10">
+      <section>
+         <h1>Abandono, despreso e sofrimento...</h1>
+         <p>No dia 19 de novembro de 2019 foram encontrados em um saco de lixo alguns cachorrinhos
+              em situação de abandono e sofrimento, todos lutando pela vida mesmo presos e em agonia.</p>
+      </section>
+   </div>
+   <div id="segundadiv" class="bgParallax" data-speed="10">
+      <section>
+         <h1>Pedido de Socorro...</h1>
+         <p>Enquanto o barulho dos carros ofuscava o som de choro, um dos cachorrinhos conseguiu gritar
+              mais forte e seu pedido de socorro foi ouvido por um lojista! </p>
+      </section>
+   </div>
+   <div id="terceiradiv" class="bgParallax" data-speed="10">
+      <section>
+         <h1>Ato de amor...</h1>
+         <p>Enquanto um acolhia um filhote em seus braços, outro cobria de cuidados, cinco pessoas
+              abriram mão de apenas transitar pelo local para iniciarem um movimento de amor e atenção especial. </p>
+      </section>
+   </div> 
+   <div id="quartadiv" class="bgParallax" data-speed="10">
+    <section>
+       <h1>Adoção...</h1>
+       <p>Em meus braços abriguei uma cadelinha, desnutrida e cheia de feridas, dei cuidados,
+           a um lar cheio de carinho e amor ao peuqueno bichinho. </p>
+    </section>
+ </div>  
+ <div id="quintadiv" class="bgParallax" data-speed="10">
+    <section>
+        <br>
+        <br>
+       <h1></h1>
+       <br>
+       <br>
+       <br>
+       <p>Nas aulas on line o {Reprograma me ensinava a codar, mais alguém crescia e desenvolvia,
+            sendo apresentada a turma On3 e logo se tornando a Git Mascotinha.
+        Não abandone animais eles nunca abandonariam você!!!! </p>
+    </section>
+ </div>     
+   <script>
+ $(document).ready(function () {
+            $("#hide").click(function(){
+                $(".text").hide();
+                
+                }) 
+
+             $("#show").click(function(){
+                $(".text").show();
+             })
+        });
+
+   $('div.bgParallax').each(function(){
+    var $obj = $(this);
+
+      $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+        var bgpos = '50% '+ yPos + 'px';
+
+        $obj.css('background-position', bgpos );
+      }); 
+   });
+   </script>  
+   <footer class="footer navbar-fixed-bottom">
+         <nav class="navbar navbar-expand-md navbar-light bg-faded "></nav>
+           <smal> © Isaura Camargo </smal>  
+</body>
+</html>
