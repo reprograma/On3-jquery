@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+  color: #fff;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+
+}
+
+h1 {
+  margin-bottom: 1em;
+  margin-left: 3em;
+  color: #EABED5;
+}
+
+h3 {
+  margin-left: 3em;
+}
+
+
+.bgParallax {
+  min-height: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* Imagens de Background */
+#primeiraDiv {
+  background-image: url(../img/adrienne-rich01.jpg);
+  background-size: cover;
+}
+
+#segundaDiv {
+  background-image: url(../img/adrienne-rich-02.jpg);
+  background-size: cover;
+}
+
+#terceiraDiv {
+  background-image: url(../img/adrienne-rich-03.jpg);
+}
+
+.titulo {
+  margin: left;
+  padding: 13% 0;
+  text-align: left;
+  font-size: 20px;
+}
+
+.descricao {
+  margin-left: 3em;
+  margin-right: 40em;
+  font-size: 1em;
+  padding: 20% 0;
+  text-align: justify;  
+  text-justify: inter-word;
+}
+
+.discurso {
+  margin-left: 8em;
+  margin-right: 8em;
+  padding: 13% 0;
+  text-align: justify;  
+  text-justify: inter-word;
+}
