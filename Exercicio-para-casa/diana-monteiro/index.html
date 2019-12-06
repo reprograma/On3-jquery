@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grandes Sertões</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Cantata+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="primeiradiv" class="bgParallax" data-speed="15">
+        <section>
+            <h1 class="titulo1">Os Grandes Sertões Veredas</h1>
+            <h2 clas="titulo2">Por João Guimarães Rosa</h2>
+            <p class="paragrafo1">"João Guimarães Rosa, conhecido também como Guimarães Rosa foi um contista, novelista, romancista e diplomata mineiro que escreveu um dos livros mais importantes da nossa literatura: Grande Sertão Veredas, o único romance escrito por ele. Grande Sertão Veredas possui uma narrativa incrível, onde a experiência de vida e a experiência de texto se fundem. Seu texto possui uma linguagem especial, marcada por neologismos e um estilo regional único. Estas características muitas vezes fazem com que a leitura e a interpretação se tornem um desafio ímpar para os leitores, sua leitura e interpretação constituem um constante desafio para os leitores."</p>
+        </section>
+    </div>
+    <div id="segundadiv" class="bgParallax" data-speed="15">
+        <section>
+            <h2>O bom da vida é para cavalo, que vê capim e come</h2>
+            <p>“A vida da gente vai em erros, como um relato sem pés nem cabeça, por falta de sisudez e alegria. Vida devia de ser como sala do teatro, cada um inteiro fazendo com forte gosto seu papel, desempenho.”</p>
+    </section>
+    </div>
+    <div id="terceiradiv" class="bgParallax" data-speed="15">
+        <section>
+            <h2>Sertão: é dentro da gente</h2>
+            <p>"O correr da vida embrulha tudo. A vida é assim, esquenta e esfria, aperta e depois afrouxa e depois desinquieta. O que ela quer da gente é coragem. O que Deus quer é ver a gente aprendendo a ser capaz de ficar alegre e amar, no meio da tristeza. Todo caminho da gente é resvaloso, mas cair não prejudica demais. A gente levanta, a gente sabe, a gente volta."</p>
+        </section>
+    </div>    
+    <div id="quartadiv" class="bgParallax" data-speed="15">
+        <section>
+            <h2>Mas a gente quer Céu é porque quer um fim</h2>
+            <p>"A gente vive repetido, o repetido, e, escorregável, num mim minuto, já está empurrado noutro galho. Acertasse eu com o que depois sabendo fiquei, para de lá de tantos assombros... Um está sempre no escuro, só no último derradeiro é que clareiam a sala. Digo: o real não está na saída nem na chegada: ele se dispõe para a gente é no meio da travessia." </p>
+        </section>
+    </div>
+    <div id="quintadiv" class="bgParallax" data-speed="15">
+        <section>
+            <h2>Eu careço de que o bom seja bom e o ruim ruim</h2>
+            <p>“Mas, na ocasião, me lembrei dum conselho de Zé Bebelo, na Nhanva, um dia me tinha dado. Que era: que a gente carece de fingir às vezes que raiva tem, mas raiva mesma nunca se deve de tolerar de ter. Porque, quando se curte raiva de alguém, é a mesma coisa que se autorizar que essa própria pessoa passe durante o tempo governando a ideia e o sentir da gente.”</p>
+        </section>
+    </div>        
+    <script>
+        $(document).ready(function (){    
+            $('div.bgParallax').each(function(){
+                var $obj = $(this);
+                $(window).scroll(function() {
+                    var yPos = $(window).scrollTop() / $obj.data('speed'); 
+                   var bgpos = '50% '+ yPos + 'px';
+                   obj.css('background-position', bgpos);
+                }); 
+            });
+
+        $('#primeiradiv').mouseenter(function(){
+            $('#primeiradiv h1').fadeIn();
+            $('#primeiradiv h2').fadeIn('slow');
+            $('#primeiradiv p').fadeIn(3000);
+        }) 
+
+        $('#segundadiv').mouseenter(function(){
+            $('#segundadiv h1').fadeIn();
+            $('#segundadiv h2').fadeIn('slow');
+            $('#segundadiv p').fadeIn(3000);
+        }) 
+
+        $('#terceiradiv').mouseenter(function(){
+            $('#terceiradiv h1').fadeIn();
+            $('#terceiradiv h2').fadeIn('slow');
+            $('#terceiradiv p').fadeIn(3000);
+        }) 
+
+        $('#quartadiv').mouseenter(function(){
+            $('#quartadiv h1').fadeIn();
+            $('#quartadiv h2').fadeIn('slow');
+            $('#quartadiv p').fadeIn(3000);
+        }) 
+
+        $('#quintadiv').mouseenter(function(){
+            $('#quintadiv h1').fadeIn();
+            $('#quintadiv h2').fadeIn('slow');
+            $('#quintadiv p').fadeIn(3000);
+        }) 
+
+        });
+    </script>    
+</body>
+</html>
