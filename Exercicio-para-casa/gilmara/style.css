@@ -1,0 +1,51 @@
+* {
+    margin:0; 
+    padding: 0;
+}
+html, body {
+    height:100%;
+}
+/** formata elementos que tem backgrounds parallax **/
+.bgParallax {
+    font-family: 'Elsie', cursive;
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+/* Define backgrounds dos divs */
+#primeiradiv {
+    background-image: url(https://cdn.britannica.com/67/19367-050-885866B4/Valley-Taurus-Mountains-Turkey.jpg);
+}
+#segundadiv {
+    background-image: url(https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1507062474/hotel-everest-namche-nepal-mountain-lodge-MOUNTAIN1017.jpg?itok=g-S4SL9n);
+}
+#terceiradiv {
+    background-image: url(https://viff.org/ArticleMedia/Images/2018/festival/films/ThisMountainLife.jpg);
+}
+
+/** Formata o article que vai o texto **/
+.bgParallax section {
+  width: 70%;
+  text-align: center;
+  margin:0 auto;
+  padding:20% 0 0;
+}
+
+/** formata texto **/
+section h1 {
+    font-size:40px;
+}
+section p {
+    line-height: 30px;
+    font-size:20px;
+    margin-top:15px;
+}
+section p a {
+    color:#FFF;
+    text-decoration:none;
+    font-size:30px;
+}
