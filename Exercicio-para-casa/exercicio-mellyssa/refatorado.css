@@ -1,0 +1,363 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background: #f8f9fa;
+    font-size: 14px;
+  }
+@media (max-width: 480px){
+body {
+    margin-right: auto;
+    }
+}    
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+.nav {
+    background: #a0bed0;
+}
+@media (max-width: 480px){
+.nav {    
+    background-color: #fff;
+    }
+}
+.nav .container {
+    width: 80vw;
+    margin: auto;
+}
+@media (max-width: 480px){
+.nav, .container {
+    margin-right: 25px;
+    }
+}
+.nav__menu {
+    display: flex;
+    justify-content: flex-end;   
+    padding: 29px;
+    font-size: 1.5em;
+}
+@media (max-width: 480px){
+.nav__menu {
+    padding: 28px 0px;     
+    }
+}
+.nav__link {
+    padding-right: 0,20px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 550;
+    margin-right: 50px;
+    text-align: center;
+    justify-content: center;
+}
+.nav__mobile {
+    display: none;
+}
+@media (max-width: 480px){
+.nav__mobile {
+    display: flex;
+    justify-content: flex-end;
+    }
+}
+
+/* INICIO DOS BANNERS */
+.banner {
+    background-image: url("../img/foto-banner.jpg");
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    min-height: 85vh;    
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align-last: center;
+}
+
+/* BANNERS PARALLAX */
+
+.bgParallax {
+    color:#FFF;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    text-align-last: center;
+}
+
+
+/* FOTOS*/
+
+#primeiradiv {
+    background-image: url(img/foca1.jpg);
+}
+#segundadiv {
+    background-image: url(img/eve2.jpg);
+}
+#terceiradiv {
+    background-image: url(img/aurora.jpg);
+}
+
+/* TEXTO */
+
+.bgParallax section {
+    width: 50%;
+    text-align: center;
+    margin:0 auto;
+    padding:30% 0 0;
+    position: relative;
+    bottom: 200px;
+  }
+
+.banner__title-dois {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 80px;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 7px;
+}
+
+@media (max-width: 480px){
+    .banner__title-dois {
+        padding-top: 20vh;
+        font-size: 40px;
+        opacity:0.9;
+        }
+}
+
+
+/* MEDIA QUERIES */  
+
+@media (max-width: 480px){
+.banner {
+    max-height: auto; 
+    background-position: right;
+    }
+}
+.banner__title {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 105px;
+    padding-top: 12vh;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 7px;
+}
+@media (max-width: 480px){
+    .banner__title {
+        font-size: 70px;
+        opacity:0.9;
+        }
+}
+.banner__subtitle {
+    color: #fff;
+    font-size: 22px;
+    text-align: center;
+    scroll-padding-left: 70px;
+    padding-bottom: 10px;
+}
+@media (max-width: 480px){
+.banner__subtitle {
+    font-size: 19px;
+    padding-bottom: 25px;
+    padding-top: 10px;
+    }
+}
+.btn {
+    background-color: #829dad;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    padding: 15px 30px;
+    display: inline-block;
+    margin: 30px;
+}
+@media (max-width: 480px){
+.btn {
+    margin-bottom: 40px;
+    font-size: medium
+    }
+}
+.about {
+    background-color: #000;
+    opacity: 0.8;
+    text-align: center;
+    padding: 50px;
+    color: #fff;
+    font-size: 14px;
+}
+@media (max-width: 480px){
+.about {
+    padding: 40px;
+    font-size: 16px;
+    text-align: center;
+    }
+}
+.about__title {
+    padding-bottom: 25px;
+}
+#destinos .container {
+    max-width: 70%;
+    margin: auto;
+    padding-top: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+@media (max-width: 480px){
+#destinos .container{
+    max-width: 90%;
+    }
+}
+.destination {
+    display: flex;
+}
+@media (max-width: 480px){
+.destination {
+    display:flex;
+    flex-direction:column;
+    }
+}
+.destination--siberia__img {
+    max-width: 75%;
+    margin: 28px 0px 50px 0px
+}
+@media (max-width: 480px){
+.destination--siberia__img {
+    max-width: 100%;  
+    }
+}
+.destination__title--siberia{
+    font-weight: bold;
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+.destination__text {
+    text-align: center;
+    color: #000;
+    margin-top: 20%;
+    margin-left: 20px;
+    font-size: 14px;
+}
+@media (max-width: 480px){
+.destination__text { 
+    margin: -25px 40px 50px 40px;
+    }
+}
+.destination--groenlandia {
+    width: 100%;
+    display: flex;
+    float: left;
+}
+@media (max-width: 480px){
+.destination--groenlandia {
+    display: flex;
+    flex-direction: column;
+    margin-bottom:50px;
+    }
+}
+.destination--groenlandia__img {
+    max-width: 50%;
+}
+@media (max-width: 480px){
+    .destination--groenlandia__img {
+        max-width:100%;
+        }
+    }
+.destination__description--groenlandia{
+    text-align: left;
+    color: #fff;
+    font-size: 14px;
+    background: #000;
+    padding-left: 30px;
+    padding-top:10%;
+}
+
+@media (max-width: 480px){
+.destination__description--groenlandia {
+    padding: 50px;
+    }
+}
+.destination__title {
+    font-size: 25px;
+    padding-bottom: 20px;
+}
+.destination--antartida {
+    display: flex;
+    float: right;
+}
+@media (max-width: 480px){
+.destination--antartida {
+    display: flex;
+    flex-direction: column-reverse;
+    }
+}
+.destination--antartida__img {
+    max-width: 50%;
+}
+@media (max-width: 480px){
+.destination--antartida__img {
+    max-width:100%;
+    }
+}
+.destination__description--antartida {
+    text-align: right;
+    color: #fff;
+    font-size: 14px;
+    background: #000;
+    padding-right:30px;
+    padding-top:10%;
+}
+@media(max-width:480px){
+    .destination__description--antartida{
+        padding-bottom: 50px;
+    }
+}
+.destination__description {
+    padding: 25px;
+    opacity: 0.8;
+    padding-top: 80px;
+    padding-right: 40px;
+}
+@media (max-width: 480px){
+.destination__description {
+    padding: 40px;
+    text-align: center;
+    }
+}
+.destination_paragraph {
+    opacity: 0.8;
+}
+.footer {
+    background-color: #000;
+    opacity: 0.8;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 80px;
+    text-align: center;
+    padding: 30px;
+}
+.footer p{
+    font-weight: 100;  
+    font-size: 14px;
+    opacity: 0.8;
+}
+.footer img{
+    padding: 40px 0px;
+}
+.footer li {
+    padding: 0.4em 0.7em;
+}
+.footer__socialmedia{
+    display: flex;
+    justify-content: center;
+    opacity: 0.8;
+}
+small{
+    font-size: 13px;
+    opacity: 0.8;
+}
