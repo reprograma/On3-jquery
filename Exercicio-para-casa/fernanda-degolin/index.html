@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+    <title>JQuery</title>
+</head>
+<body>
+
+<!-- OUTONO -->
+   <div id="outonodiv" class="bgParallax" data-speed="50">
+      <section>
+         <h1>Outono</h1>
+         <p>Do latim autumno. Também conhecido como o tempo da colheita, pois é nesta época que ocorrem as grandes colheitas. Os dias ficam mais curtos e mais frescos. As folhas e frutas, já estão bem maduras e começam a cair no chão. Os jardins e parques ficam, coberto de folhas de todos os tamanhos e cores. </p>
+      </section>
+   </div> 
+
+  <!-- INVERNO -->
+   <div id="invernodiv" class="bgParallax" data-speed="20">
+      <section>
+         <h1>Inverno</h1>
+         <p>Do latim hibernu, tempus hibernus, tempo hibernal. Associado ao ciclo biológico de alguns animais ao entrar em hibernação e se recolherem durante o período de frio intenso. Estação que sucede o Outono e antecede a Primavera. </p>
+      </section>
+   </div>
+
+   <!-- PRIMAVERA -->
+   <div id="primaveradiv" class="bgParallax" data-speed="10">
+      <section>
+         <h1>Primavera</h1>
+         <p>Do latim primo vere, no começo do verão. </p>
+      </section>
+   </div>    
+
+   <!-- VERAO -->
+   <div id="veraodiv" class="bgParallax" data-speed="10">
+          <section>
+         <h1>Verão</h1>
+         <p>Do latim vulgar veranum, veranuns tempus, tempo primaveril ou primaveral. </p>
+      </section>
+   </div>    
+
+
+   <script>
+   $('div.bgParallax').each(function(){
+    var $obj = $(this);
+
+      $(window).scroll(function() {
+        var yPos = -($(window).scrollTop() / $obj.data('speed')); 
+        var bgpos = '50% '+ yPos + 'px';
+
+        $obj.css('background-position', bgpos );
+      }); 
+   });
+
+  
+
+   </script>   
+   
+   
+
+</body>
+</html>
