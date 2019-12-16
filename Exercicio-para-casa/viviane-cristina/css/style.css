@@ -1,0 +1,112 @@
+* {margin:0; padding: 0;}
+html, body {height:100%;}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin:20px;
+    padding-left: 1%;
+}
+
+.menu a{
+    padding-left: 20px;
+    padding-right: 20px;
+    text-decoration: none;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+
+.menu a:hover{
+    background-color: grey;
+    color: white;
+}
+
+.bgParallax {
+    font-family: 'Dancing Script', cursive;
+    color:#FFF;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-position: 50% 0;
+    background-repeat: repeat;
+    text-shadow:0 0 10px rgba(0,0,0,0.7);
+}
+
+#natal {
+    background-image: url(../img/natal.jpg);
+}
+
+#anoNovo {
+    background-image: url(../img/anonovo.jpg);
+}
+
+#contato {
+    background-image: url(../img/contato.jpg);
+}
+
+h1 {
+    font-size:60px;
+}
+
+p {
+    font-family: 'Satisfy', cursive;
+    font-size:25px; 
+    margin-top:15px;
+}
+
+#natal article {
+    width: 50%;
+    text-align: left;
+    padding-top:10%;
+    padding-right: 30%;
+    padding-left: 5%;
+}
+
+#anoNovo article {
+    width: 70%;
+    text-align: center;
+    padding-left: 15%;
+    padding-top: 6%;
+    text-shadow: black;
+  }
+
+#contato{
+    padding-top: 60px;
+    text-align: center;
+}
+.formulario{
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.form_contato {
+    text-align: left;
+    padding-left: 20%;
+    padding-top: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+#nome, #email, #mensagem, #telefone{
+    width: 400px;
+}
+
+button{
+    text-align:center;	
+    font-weight: bold;
+    width:120px;  
+    height:24px;
+}
+
+button:hover{
+    background-color: lightblue;
+}
+
+
+
