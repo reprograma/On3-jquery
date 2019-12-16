@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <title>Corridas</title>
+</head>
+
+<body>
+    <h1>Corridas realizadas</h1>
+    <div>
+        <button id="btn18">2018</button>
+        <button id="btn19">2019</button>
+    </div>
+
+    <div class="fotos">
+        <div><img id="img1" style="width:40%;height:auto;display:none" src="img/Cru18.jpg"></div>
+        <div><img id="img2" style="width:100%;height:auto;display:none" src="img/Bra19.jpg"></div>
+        <div><img id="img3" style="width:100%;height:auto;display:none" src="img/Mara19.jpg"></div>
+        <div><img id="img4" style="width:100%;height:auto;display:none" src="img/Cru19.jpg"></div>
+        <div> <img id="img5" style="width:100%;height:auto;display:none"g src="img/Tre19.jpg"></div>
+    </div>
+    <div class="text" style="display: none">
+        <p id="textImg"></p>
+    </div>
+
+    <style>
+        .fotos {
+            width: 100%;
+            height: auto;
+            display: inline-flex;
+            margin-top: 30px;
+        }
+
+        .text {
+            background-color: rgb(114, 196, 114);
+            color: rgb(44, 43, 43);
+            width: 100%;
+            height: 30px;
+            font-size: medium;
+            vertical-align: middle;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            $("#btn18").click(function () {
+                $("#img2, #img3, #img4, #img5").fadeOut("fast");
+                $(".text").hide();
+                $("#img1").fadeIn("slow");
+            })
+            $("#btn19").click(function () {
+                $("#img1").fadeOut("fast");
+                $(".text").hide();
+                $("#img2, #img3, #img4, #img5").fadeIn("slow");
+            })
+
+            $("#img1").mouseenter(function () {
+                $("#textImg").html("7ªCorrida do Cruzeiro - Novembro");
+                $(".text").show();
+            });
+
+            $("#img2").mouseenter(function () {
+                $("#textImg").html("Corrida do Banco do Brasil - Julho");
+                $(".text").show();
+            });
+
+            $("#img3").mouseenter(function () {
+                $("#textImg").html("Corrida da Mulher Maravilha - Julho");
+                $(".text").show();
+            });
+
+            $("#img4").mouseenter(function () {
+                $("#textImg").html("Corrida do Cruzeiro - Outubro");
+                $(".text").show();
+            });
+
+            $("#img5").mouseenter(function () {
+                $("#textImg").html("II Treino com Medalha -Cruzeiro - Novembro");
+                $(".text").show();
+            });
+        });
+    </script>
+</body>
+
+</html>
