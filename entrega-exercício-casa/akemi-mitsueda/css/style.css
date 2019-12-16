@@ -1,0 +1,44 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Esteban', serif;
+  font-size: 1.4em;
+  color: #fff;
+  margin: 0 auto;
+}
+
+h1 {
+  margin-bottom: 1em;
+}
+
+.bgParallax {
+  min-height: 100%;
+  position: relative;
+  background-attachment: fixed;
+}
+
+/* BG IMG */
+#firstDiv {
+  background-image: url(../img/photo01.jpg);
+  background-size: cover;
+}
+
+#secondDiv {
+  background-image: url(../img/photo02.jpg);
+  background-size: cover;
+}
+
+#thirdDiv {
+  background-image: url(../img/photo03.jpg);
+}
+
+.poem {
+  margin: 0 auto;
+  padding: 13% 0;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
