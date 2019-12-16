@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel=stylesheet href="./style.css" />
+    <title>Aniversário</title>
+</head>
+<body>
+    <div id="background1" class="bgParallax">
+        <section>
+            <h1>Você está convidada(o) para o meu aniversário!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam placeat voluptatibus pariatur! Aperiam magni eos illo quasi earum, doloribus quibusdam dicta placeat labore sequi debitis quaerat id voluptatum eveniet velit.</p><br>
+            <script>
+                    $(document).ready(function (){
+                        $("#btn1").mouseenter(function() {
+                            alert("Dia 21/12! Leva presente!")
+                        });
+                    });
+                    </script>
+            <p id="btn1" class="botao1">Que dia vai ser?</p>
+        </section>
+    </div>
+    
+    <div id="background2" class="bgParallax">
+        <section>
+            <h1>Você está convidada(o) para o meu aniversário!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam placeat voluptatibus pariatur! Aperiam magni eos illo quasi earum, doloribus quibusdam dicta placeat labore sequi debitis quaerat id voluptatum eveniet velit.</p><br>
+
+            <script>
+            $(document).ready(function (){
+                $("#btn2").mouseenter(function() {
+                    alert("Rua Fantasia, 123 - Brasil")
+                });
+            });
+            </script>
+            <p id="btn2">Onde vai ser?</p>
+        </section>
+    </div>
+
+    <script>
+        $('div.bgParallax').each(function(){
+            var $obj = $(this);
+
+                $(window).scroll(function(){
+                    var yPos = -($(window).scrollTop() / $obj.data('speed'));
+                    var bgPos = '50%' + 'yPos' +'px';
+                })
+        });
+        </script>
+    
+</body>
+</html>
