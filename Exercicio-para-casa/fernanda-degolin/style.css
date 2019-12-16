@@ -1,0 +1,63 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.bgParallax {
+    font-family: 'roboto';
+    color: #FFF;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+#outonodiv {
+    background-image: url(img/outono);
+    filter: grayscale(85%);
+}
+
+#invernodiv {
+    background-image: url(img/inverno.jpg);
+    filter: grayscale(60%);
+}
+
+#primaveradiv {
+    background-image: url(img/primavera.jpg);
+    filter: grayscale(30%);
+}
+
+#veraodiv {
+    background-image: url(img/verao.jpg);
+    filter: grayscale(0%);  
+}
+
+.bgParallax section {
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20% 0 0;
+}
+
+section h1 {
+    font-size: 40px;
+    text-shadow: rgb(121, 107, 107) 5px 2px 2px;
+}
+
+section p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+    text-shadow: rgb(161, 159, 159) 5px 0px 2px;
+}
+
+section p a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 30px;
+}
