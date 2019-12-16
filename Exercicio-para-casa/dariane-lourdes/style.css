@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Alata|Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.bgParallax {
+    font-family: 'Roboto', sans-serif;
+    color: gray;
+    margin: 0 auto;
+    width: 100%;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+}
+
+#saoPaulo {
+    background-image: url(./img/sao-paulo.jpg);
+    background-size: cover;
+}
+
+
+#saoPaulo2 {
+    background-image: url(./img/sao-paulo.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.sp {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20% 0 0;
+}
+
+ h1 {
+    font-size: 90px;
+    letter-spacing: 15px;
+    font-family: 'Alata', sans-serif;
+    color: rgb(100, 23, 201);
+}
+
+ p {
+    line-height: 30px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+h2 {
+    color: #ffffff;
+}
+
+/* MEDIA */
+
+@media (max-width: 425px) {
+    h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+}
+
+.sp {
+    min-height: 400px;
+}

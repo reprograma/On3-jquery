@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sampa</title>
+</head>
+
+<body>
+
+
+    <section id="saoPaulo" class="bgParallax" data-speed="15">
+        <div class="sp">
+            <h1>SÃO PAULO</h1>
+        </div>
+    </section>
+    <section id="saoPaulo1" class="bgParallax" data-speed="15">
+        <div class="sp">
+
+            <p class="about">Sampa, Terra da Garoa, Locomotiva do Brasil… Esses são apenas alguns dos apelidos de São
+                Paulo,
+                cidade com mais de 460 anos que ostenta com orgulho o título de maior metrópole da América do Sul.
+                Repleta de atrações diversas, São Paulo é também um prato cheio para quem é apaixonado por história.</p>
+
+        </div>
+    </section>
+    <section id="saoPaulo2" class="bgParallax" data-speed="15">
+        <div class="sp">
+
+            <h2>Venha Conhecer!</h2>
+        </div>
+    </section>
+
+
+
+
+    <script>
+        $(document).ready(function () {
+            $('.bgParallax').each(function () {
+                var $obj = $(this);
+
+                $(window).scroll(function () {
+                    var yPos = -($(window).scrollTop() / $obj.data('speed'));
+                    var bgpos = '50% ' + yPos + 'px';
+
+                    $obj.css('background-position', bgpos);
+                });
+            });
+
+            $('#saoPaulo2').mouseenter(function () {
+                $('#saoPaulo2').css('font-size', '50px');
+            })
+
+
+        })
+
+    </script>
+
+</body>
+
+</html>
