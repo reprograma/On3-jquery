@@ -1,0 +1,78 @@
+* {
+    margin:0; 
+    padding: 0;
+}
+html, body {
+    height:100%;
+}
+
+/** formata elementos que tem backgrounds parallax **/
+.bgParallax {
+    font-family: 'Elsie', cursive;
+    color: #9AFF9A ;
+    margin: 0;
+    width: auto;
+    position: relative;
+    min-height: 100%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #228B22;
+}
+.text {
+    font-family: 'Elsie', cursive;
+    background-color: #228B22;;
+    color: white;
+    width:auto;
+    height: auto;
+}
+
+/* Define backgrounds dos divs */
+#primeiradiv {
+    background-image: url(img/img06.jpg);
+
+}
+#segundadiv {
+    background-image: url(img/img05.jpg);
+    
+}
+#terceiradiv {
+    background-image: url(img/img11.jpg);
+
+}
+#quartadiv {
+    background-image: url(img/img12.jpg);
+    
+}
+#quintadiv {
+    background-image: url(img/img30.jpg);
+    
+}
+
+/** Formata o article que vai o texto **/
+.bgParallax section {
+  width: 70%;
+  text-align: center;
+  margin:0 auto;
+  padding:20% 0 0;
+}
+
+/** formata texto **/
+section h1 {
+    font-size:40px;
+}
+section p {
+    line-height: 30px;
+    font-size:20px;
+    margin-top:15px;
+}
+section p a {
+    color:#FFF;
+    text-decoration:none;
+    font-size:30px;
+}
+.footer{
+    font-family: 'Elsie', cursive;
+    background-color: #228B22;
+    color:#FFF ;
+    text-align: center;
+}
