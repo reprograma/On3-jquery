@@ -1,0 +1,80 @@
+/* formatacao geral */
+
+body {
+    font-family:'Asap', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.h1 {
+    font-weight: 500;
+    font-color: #424242;
+}
+
+.p {
+    font-size: 1em;
+    padding: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.li {
+    margin-top:0;
+    padding-top:0;
+}
+
+.parallax-window {
+    min-height: 600px;
+    background: transparent;
+}    
+
+/* index - sobre mim */
+.container__sobremim {
+    background-color:#8A0808;
+    padding: 5em;
+    align-content: space-around;
+
+}
+
+.p__sobremim{
+    font-size: 1em;
+    text-align: left;
+    color: #ffffff;
+    padding-left: 1.5em;
+}
+
+.h1__sobremim {
+    color: #ffffff;
+    padding-left: 0.6em;
+}
+
+/* index form */
+.container__form {
+    background-color: #D8D8D8;
+}
+
+
+/* curriculo*/
+
+.cv__titulo {
+    font-size: 1.3em;
+    font-weight: 500;
+    color:#424242;
+    padding-top: 0.5em;
+}
+
+.ul{
+    padding-bottom: 0;
+}
+.btn-link {
+    font-size: 1em;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.p__cursos{
+    margin-bottom: 0.2em;
+}
