@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./exercicio.css" />
+    <title>Exercicíos de Jquery</title>
+</head>
+
+<!-- Divs do efeito Jquery: Parallax-->
+
+<body>
+    <div id="div1" class="bgParallax" data-speed="10">
+        <section>
+            <h1>Eu amo praia</h1>
+            <p>"Sinta o mar, o vento, o sol. Cada trajetória deve ser explorada ao máximo."</p>
+        </section>
+    </div>
+    <div id="div2" class="bgParallax" data-speed="10">
+        <section>
+            <h1>Eu amo praia</h1>
+            <p>"Não corras, não atropele: as ondas do mar sempre beijaram as areias das praias, e o sol nasce sem pressa."</p>
+        </section>
+    </div>
+    <div id="div3" class="bgParallax" data-speed="15">
+        <section>
+            <h1>Eu amo praia</h1>
+            <p>"Praia, nascer do sol, caneca de café, metade do lado, som do mar, silencio do mundo."</p>
+        </section>
+    </div>
+    <!-- Final das Divs-->
+
+    <!-- Jquery Efeito Parallax ... -->
+    <script>
+        $('div.bgParallax').each(function () {
+            var obj = $(this);
+
+            $(window).scroll(function () {
+                var yPos = -($(window).scrollTop() / obj.data('speed'));
+                var bgpos = '50% ' + yPos + 'px';
+                obj.css('background-position', bgpos);
+            })
+        });
+
+        // Evento de mouseenter - exibe quando o cursor do mouse entrar na área da div //
+        $(function () {
+            $("#div1").mouseenter(function () {
+                alert("Eu")
+            });
+        });
+
+        // Evento click - é disparado quando o usuário clica no elemento // 
+        $(function () {
+            $("#div2").click(function () {
+                alert("Amo")
+            });
+        });
+
+        // Elemento mouseuo - é disparado quando o mouse é solto // 
+        $(function () {
+            $("#div3").mouseup(function () {
+                alert("Praia")
+            });
+        });
+
+    </script>
+</body>
+
+</html>
