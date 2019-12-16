@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Natália Acedo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <!-- JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!--fonte Raleway -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--Início do NavBar-->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#home">Natália Acedo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Alterna navegação">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#about">Sobre mim</a>
+                <a class="nav-item nav-link" href="#artigos">Artigos</a>
+                <a class="nav-item nav-link" href="#contato">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--Final do NavBar-->
+
+    <!-- Início CAROUSEL-->
+    <section id="home">
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100 carousel-img-1" src="src/adventure.jpg" alt="Primeiro Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> Psicoterapia Online</h5>
+                        <p>Lorem ipsum class fermentum donec dolor curabitur potenti vel potenti quis leo, mauris
+                            elementum
+                            fringilla
+                            ut primis arcu praesent taciti potenti ac. semper vitae rhoncus porta suscipit lobortis orci
+                            sem
+                            lorem velit
+                            volutpat. </p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100 carousel-img-2" src="src/autism.png" alt="Segundo Slide">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5> ABA - Terapia para pessoas autistas</h5>
+                        <p>Lorem ipsum class fermentum donec dolor curabitur potenti vel potenti quis leo, mauris
+                            elementum
+                            fringilla
+                            ut primis arcu praesent taciti potenti ac. semper vitae rhoncus porta suscipit lobortis orci
+                            sem
+                            lorem velit
+                            volutpat. </p>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Fim Carousel -->
+
+    <!---Início Newsletter-->
+
+    <section class="container newsletter">
+        <div class="container align-items-center newsletter1">
+            <!--linha-->
+            <div class="row">
+                <!-- Texto -->
+                <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-start newsletter-texto">
+                    <h2>
+                        ASSINE MINHA NEWSLETTER
+                    </h2>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-12 d-flex justify-content-start newsletter-texto2">
+                    <p>
+                        Digite seu email para receber minha newsletter todo mês
+                    </p>
+                </div>
+
+                <!--e-mail-->
+                <div class="col-12 col-sm-12 col-md-6  d-flex justify-content-start newsletter-email">
+                    <label for="formGroupExampleInput"></label>
+                    <input type="text" class="form-control formNewsletter" id="formGroupExampleInput"
+                        placeholder="Digite seu e-mail">
+                </div>
+
+                <!-- botão -->
+                <div class="col-12 col-sm-12 col-md-3  d-flex justify-content-start newsletter-email">
+                    <a class="btn btn-danger" id="botaoNewsletter"> Enviar </a>
+                </div>
+
+                <!---Texto JQuery-->
+                <div class="col-12 col-sm-12 col-md-6 textoNewsletter">
+                    <p class="dois">Boa leitura!</p>
+                </div>
+            </div>
+
+            <div class="newsletter2 col-12 col-sm-12 col-md-4">
+                <!--Imagem-->
+                <div class="newsletter-img">
+                    <img src="src/newsletter.png" alt="foto natalia" class="img-thumbnail ">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fim Newsletter -->
+
+    <!-- Início About -->
+    <section class="about">
+        <div class="container" id="about">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <h1 class="display-5 text-center"> </h1>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-12 col-sm-12 col-md-4 about-img d-flex justify-content-center">
+                    <img src="src/natalia2.jpeg" alt="foto natalia" class="img-thumbnail ">
+                </div>
+                <div class="col-12 col-sm-12 col-md-8 about-texto d-flex justify-content-center">
+                    <p class="about-p">
+                        Lorem ipsum class fermentum donec dolor curabitur potenti vel potenti quis leo, mauris elementum
+                        fringilla
+                        ut primis arcu praesent taciti potenti ac. semper vitae rhoncus porta suscipit lobortis orci sem
+                        lorem velit
+                        volutpat, pharetra blandit adipiscing mattis phasellus tempor sit arcu. gravida bibendum
+                        vulputate
+                        curabitur. Lorem ipsum class fermentum donec dolor curabitur potenti vel potenti quis leo,
+                        mauris elementum
+                        fringilla.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fim About -->
+
+    <!-- Início Artigos-->
+
+    <section class="meus-artigos" id="artigos">
+        <div class="container artigos">
+
+            <div class="row row-artigos">
+                <div class="col-12 col-sm-12 col-md-12 ">
+                    <h1 class="display-5 text-center">Artigos</h1>
+                </div>
+            </div>
+            <div class="row row-artigos" id="artigosUm">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/imigrante.jpg" alt="Imagem imigrantes">
+                        <div class="card-body">
+                            <h5 class="card-title">Dificuldades de ser imigrante</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o
+                                conteúdo do card.</p>
+                            <a href="#" class="btn btn-dark"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/autismo-adulto.jpg" alt="Imagem tea adulto">
+                        <div class="card-body">
+                            <h5 class="card-title"> Autismo na vida adulta</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o
+                                conteúdo do card.</p>
+                            <a href="#" class="btn btn-dark"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/terapia-online.jpg" alt="Imagem terapia onlined">
+                        <div class="card-body">
+                            <h5 class="card-title"> Por que fazer terapia online? </h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o
+                                conteúdo do card.</p>
+                            <a href="#" class="btn btn-dark"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row row-artigos" id="artigosDois">
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/mae.jpg" alt="Imagem mae solo">
+                        <div class="card-body">
+                            <h5 class="card-title">Sou mãe solo</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o
+                                conteúdo do card.</p>
+                            <a href="#" class="btn btn-dark"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/hiv-2.jpg" alt="Imagem de capa do card">
+                        <div class="card-body">
+                            <h5 class="card-title"> HIV: O maior mal é o preconceito</h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o
+                                conteúdo do card.</p>
+                            <a href="#" class="btn btn-dark"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="src/qc-azul.jpg" alt="Imagem tea evidencia">
+                        <div class="card-body">
+                            <h5 class="card-title"> ABA - Práticas baseadas em evidências </h5>
+                            <p class="card-text">Um exemplo de texto rápido para construir o título do card e fazer
+                                preencher o
+                                conteúdo do card.</p>
+                            <a href="#" class="btn btn-dark"> Saiba mais </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button-artigos d-flex justify-content-center">
+                <button type="button" class="btn btn-secondary btn-lg btn-danger houver">Veja todos os artigos
+                </button>
+            </div>
+    </section>
+    <!-- Fim Artigos -->
+
+    <!--Início Contato-->
+    <section class="contato" id="contato">
+        <div class="container container-contato col-12 col-sm-12 col-md-4">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 ">
+                    <h1 class="display-5 text-center"> Entre em contato </h1>
+                </div>
+            </div>
+            <form class="formulario">
+                <div class="form-group col-12 col-sm-12 col-md-12">
+                    <label for="formGroupExampleInput"></label>
+                    <input type="text" class="form-control formContatoNome" id="formGroupExampleInput"
+                        placeholder="Nome">
+                </div>
+                <div class="form-group col-12 col-sm-12 col-md-12">
+                    <label for="formGroupExampleInput2"></label>
+                    <input type="text" class="form-control formContatoEmail" id="formGroupExampleInput2"
+                        placeholder="e-mail">
+                </div>
+                <div class="form-group col-12 col-sm-12 col-md-12">
+                    <label for="exampleFormControlTextarea1"></label>
+                    <textarea class="form-control formContatoMsg" id="exampleFormControlTextarea1"
+                        placeholder="Conte um pouco sobre você" rows="5"></textarea>
+                </div>
+
+                <div class="button-contato d-flex justify-content-center">
+                    <button type="button" class="btn btn-secondary btn-lg btn-dark" id='botaoContato'>Enviar</button>
+                </div>  
+
+                <!---Texto JQuery-->
+                <div class="col-12 col-sm-12 col-md-12 textoContato">
+                    <p class="dois">Agora é só ficar de olho no seu e-mail. Em breve entrarei em contato!</p>
+                </div>
+        </div>
+        </form>
+        </div>
+    </section>
+
+    <!--Fim Contato -->
+
+    <!-- Links Trabalho-->
+
+    <section class="links-section">
+        <div class="container">
+
+            <div class="row links-trabalho">
+                <div class="col-12 col-sm-12 col-md-12">
+                    <h3 class="text-center">Acesse também </h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-4 col-sm-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <a href="https://www.linkedin.com/in/nat%C3%A1lia-acedo-a467a7b5/" target="_blank" class="linkedin">
+                        <img src="src/linkedin.png" alt="Logotipo linkedin" class="linkedin-img">
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <a href="https://e-psi.cfp.org.br/psicologas-cadastradas/?action=pesquisar&nome=Nat%C3%A1lia+Alves+Acedo&regiao=&registro=&uf="
+                        target="_blank" class="cfp">
+                        <img src="src/cfp.png" alt="Logotipo cfp" class="cfp-img">
+                </div>
+                <div class="col-4 col-sm-4 col-md-4 d-flex justify-content-center align-items-center">
+                    <a href="https://zenklub.com.br/" target="_blank" class="linkedin">
+                        <img src="src/zenklub.png" alt="Logotipo zenklub" class="zenklub-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- Início Footer -->
+    <footer class="footer">
+
+        <nav class="nav nav-footer w-100 navbar-dark bg-dark">
+            <p class="footer-p1">Natália Acedo</p>
+            <p class="footer-p2"> CRP 06/129539 </p>
+    </footer>
+
+    <!-- SCRIPTS    -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+    <!-- SCRIPT JQUERY-->
+
+    <script>
+
+        $(document).ready(function () {
+
+            //Mensagem "Boa Leitura"
+            $('.textoNewsletter').hide();
+            $('#botaoNewsletter').click(function () {
+                $('.textoNewsletter').show();
+            });
+
+            //Efeito do teclado na Newsletter
+            $('.formNewsletter').keydown(function () {
+                $('.formNewsletter').css('background-color', '#dcdcdc')
+            })
+
+
+            //Efeito do teclado no Contato
+            $('.formContatoNome').mouseenter(function () {
+                $('.formContatoNome').css('background-color', '#dcdcdc')
+            })
+
+            $('.formContatoNome').mouseleave(function () {
+                $('.formContatoNome').css('background-color', 'white')
+            })
+
+
+            $('.formContatoEmail').mouseenter(function () {
+                $('.formContatoEmail').css('background-color', '#dcdcdc')
+            })
+
+            $('.formContatoEmail').mouseleave(function () {
+                $('.formContatoEmail').css('background-color', 'white')
+            })
+
+            $('.formContatoMsg').mouseenter(function () {
+                $('.formContatoMsg').css('background-color', '#dcdcdc')
+            })
+
+            $('.formContatoMsg').mouseleave(function () {
+                $('.formContatoMsg').css('background-color', 'white')
+            })
+
+
+            //Mensagem "Boa Leitura"
+            $('.textoContato').hide();
+            $('#botaoContato').click(function () {
+                $('.textoContato').show();
+            });
+
+        });
+
+
+
+    </script>
+
+
+
+
+</body>
+
+</html>
