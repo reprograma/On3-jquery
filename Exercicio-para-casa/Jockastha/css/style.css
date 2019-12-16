@@ -1,0 +1,40 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body,
+html {
+	height:100%;
+	font-family:sans-serif;
+	line-height:1.5;
+}
+
+/* Configura os elementos "parallax" */
+.parallax{
+	width: 100%;
+	height: 100%;
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: 50% 0;
+	position: relative;
+}
+
+/* Configura um background para cada elemento */
+.div1 {
+	background-image: url(../imagens/ditadura-gay.png);
+}
+.div2 {
+	background-image: url(../imagens/hypnos.png);
+}
+.div3 {
+	background-image: url(../imagens/menina.png);
+}
+
+p{
+	background-color: black;
+    margin: 0 auto;
+    text-align: center;
+    color: white;
+    border: 5px solid gray;
+    margin-top: 10px;
+}
