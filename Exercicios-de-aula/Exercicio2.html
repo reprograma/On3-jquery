@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <meta charset="UTF-8">
@@ -14,7 +14,11 @@
 <body>
     <img src="bubbles-citrus-citrus-fruit-close-up-556414.jpg">
     <script>
-        /*Exercicio vai aqui */
+        $(document).ready(function(){
+            $(window).scroll(function(){
+                $("img").fadeOut("1000")
+            })
+        })
     </script>
     <style>
         img{

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Exercicio 6 jquery</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <button id="btn">Clique aqui!</button>
+
+        <div class="caixa">
+            <div id="div1" style="width:80px;height:80px;display:none;background-image: url(..img/foto-1.jpg) ;"></div>
+            <div id="div2" style="width:80px;height:80px;display:none;background-color:green;"></div>
+            <div id="div3" style="width:80px;height:80px;display:none;background-color:blue;"></div>
+        </div>
+        url("../img/
+
+        <style>
+        .caixa{
+            display: flex;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+        </style>
+        <script>
+            $(document).ready(function () {
+            $("button").click(function(){
+            $("#div1").fadeIn();
+            $("#div2").fadeIn("slow");
+            $("#div3").fadeIn(3000);
+            })
+            });
+        </script>
+    </body>
+</html>
